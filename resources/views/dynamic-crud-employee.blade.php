@@ -105,7 +105,7 @@
                                                 <td>${index + 1}</td>
                                                 <td>${employee.name}</td>
                                                 <td>${employee.gender}</td>
-                                                <td>${employee.address}</td>
+                                                <td>${employee.address ? employee.address : '-'}</td>
                                                 <td>
                                                     <button class="btn btn-sm btn-primary" onclick="onEdit(${employee.id})">Edit</button>
                                                     <button class="btn btn-sm btn-danger" onclick="onDelete(${employee.id})">Delete</button>
